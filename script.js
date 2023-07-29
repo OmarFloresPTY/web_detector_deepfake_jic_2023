@@ -29,6 +29,11 @@
             const imageContainer = document.getElementById('imageContainer');
             imageContainer.innerHTML = '';
             imageContainer.appendChild(image);
+            
+            imageContainer.style.display = 'flex';
+            imageContainer.style.justifyContent = 'center';
+            imageContainer.style.alignItems = 'center';
+
              // Preprocesamiento similar a lo que mencionaste
              const preprocessedTensor = await preprocessImage(image);
 
@@ -38,6 +43,13 @@
              // Mostrar el resultado en la página
              const resultDiv = document.getElementById('result');
              resultDiv.innerHTML = `Resultado: ${predictedClass === 0 ? 'Detectado como Real' : 'Detectado como DeepFake'}`;
+             resultDiv.style.display = 'flex';
+             resultDiv.style.justifyContent = 'center';
+             resultDiv.style.alignItems = 'center';
+             resultDiv.style.fontFamily = 'Arial';
+             resultDiv.style.fontSize = '200%';
+             resultDiv.style.fontWeight = 'bold';
+             
          };
          image.src = event.target.result;
      };
