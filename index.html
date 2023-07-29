@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JIC Nacional UTP 2023</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <img id="logo-JIC" src="https://iniciacioncientifica.utp.ac.pa/wp-content/uploads/2016/02/cropped-logo-iniciacioncientifica-opcion5.png" alt="Logo JIC">
+    <div id="cabecera">
+        <h1 id="titulo-principal">Prototipo Inteligente para Detectar DeepFake - JIC UTP Nacional 2023</h1>
+    </div>
+
+    <div id="container-info">
+        <h2>¡Bienvenidos al Prototipo! 🧑‍💻</h2>
+        <p id="Informacion-prototipo">
+            La herramienta web en cuestión utiliza algoritmos de inteligencia artificial basados en redes neuronales pre-entrenadas en clasificación de imágenes,
+            estas redes neuronales han sido entrenadas previamente con una gran cantidad de datos para reconocer patrones y características en imágenes reales y falsas.
+            Cuando un usuario carga una imagen en la herramienta, el sistema procesa la imagen utilizando estas redes neuronales, durante el proceso, la imagen se analiza 
+            en busca de características que puedan indicar si es auténtica o manipulada. 
+            Al final proporciona un resultado indicando si la imagen parece ser auténtica o falsa, ayudando a los usuarios a evaluar la veracidad de las imágenes en línea.
+        </p>
+    </div>
+
+    <h2 id="exampledeepfake">Ejemplos de DeepFakes🚨</h2>
+    <div class="slider-frame">
+      <ul class="slider">
+        <li><img src="https://i.ibb.co/vZ7Vx4t/f60c4b54-b47b-4829-8bf1-6333c219f111.jpg" alt="f60c4b54-b47b-4829-8bf1-6333c219f111"></li>
+        <li><img src="https://i.ibb.co/NrVxNNX/0626fcb7-9635-4769-8eb0-60cb24551af1.jpg" alt="0626fcb7-9635-4769-8eb0-60cb24551af1"></li>
+        <li><img src="https://i.ibb.co/RCrxJT9/b210776e-0b4c-4e2c-88c9-c0b339d44583.jpg" alt="b210776e-0b4c-4e2c-88c9-c0b339d44583"></li>
+        <li><img src="https://i.ibb.co/gFqkw5v/ec6f91a9-5f36-4f60-969a-858177549fda.jpg" alt="ec6f91a9-5f36-4f60-969a-858177549fda"></li>
+        <li><img src="https://i.ibb.co/VgKnvJk/b66d3e22-fd5f-4f56-b48c-9a6777f609d6.jpg" alt="b66d3e22-fd5f-4f56-b48c-9a6777f609d6"></li>
+      </ul>
+    </div>
+
+    <h2 id="exampledeepfake">Pruebe el Prototipo aquí👇</h2>
+    <form id="imageForm" method="post">
+        <div id="container-url">
+            <label id='label1'for="imagen">Evaluar imagen de manera local 💻:</label><br><br>
+            <input type="file" id="fileInput" name="imagen"><br><br>
+            <!-- <input type="submit" value="Clasificar"> -->
+            <button type="submit" value="Clasificar">Clasificar</button>
+        </div>
+
+    <!-- <h1>Clasificador de Imágenes</h1>
+    <form id="imageForm" method="post">
+        <input type="file" id="fileInput" name="imagen">
+        <input type="submit" value="Clasificar">
+    </form> -->
+    <div id="result"></div>
+    <div id="imageContainer"></div>
+    
+</form>
+
+    <h2 id="h2-video">Videotutorial de la Herramienta 📽️</h2>
+    <p id="descripcion-video">Videotutorial de como se usa la aplicación web y sus
+        diferentes módulos incorporados, como el evaluar una imagen por medio de un enlace de internet y evaluar una imagen a través de una 
+        imagen local en nuestro computador.
+    </p>
+    <div id="video-container" style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/avi9Z-NRCFo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </iframe>
+    </div>
+
+    <!-- Importar TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.10.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="container">
+          <p>&copy; MIT License
+            Copyright (c) 2023 Omar Flores. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
+
+
